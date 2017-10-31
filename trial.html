@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #6fa5ce;
+            overflow-x: hidden;
+            transition: 0.2s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #2A2A2A;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+
+        }
+        .btc-icon:hover{
+            fill: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="btc-icon">
+            <a href="#"><img src="img/BTC.svg"  alt="Bitcoin" height = "30px" width="30px" style='vertical-align: middle'> Bitcoin</a>
+        </div>
+
+    <div class="eth-icon">
+        <a href="#"><img src="img/ETH.svg"  alt="Etheruem" height = "30px" width="30px" style='vertical-align: middle'> Ethereum</a>
+    </div>
+
+    <div class="xrp-icon">
+        <a href="#"><img src="img/XRP.svg"  alt="Ripple" height = "30px" width="30px" style='vertical-align: middle'> Ripple</a>
+    </div>
+
+    <div class="dash-icon">
+        <a href="#"><img src="img/DASH.svg"  alt="Dash" height = "30px" width="30px" style='vertical-align: middle'> Dash</a>
+    </div>
+    <div class="etc-icon">
+        <a href="#"><img src="img/ETC-alt.svg"  alt="Ethereum Classic" height = "30px" width="30px" style='vertical-align: middle'> Eth-Classic</a>
+    </div>
+
+    <div class="ltc-icon">
+        <a href="#"><img src="img/LTC.svg"  alt="Litecoin" height = "30px" width="30px" style='vertical-align: middle'> Litecoin</a>
+    </div>
+
+    <div class="xmr-icon">
+        <a href="#"><img src="img/XMR.svg"  alt="Monero" height = "30px" width="30px" style='vertical-align: middle'> Monero</a>
+    </div>
+    <div class="xem-icon">
+        <a href="#"><img src="img/XEM.svg"  alt="NEM" height = "30px" width="30px" > NEM</a>
+    </div>
+
+    <div class="neos-icon">
+        <a href="#"><img src="img/NEOS-alt.svg"  alt="NEOS" height = "30px" width="30px"> NEOS</a>
+    </div>
+
+    <div class="strat-icon">
+        <a href="#"><img src="img/STRAT-alt.svg"  alt="Stratis" height = "30px" width="30px"> Startis</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Step 1</span>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</body>
+</html>
