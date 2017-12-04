@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CVA:OHLC History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/drag-panes.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+
+
+</head>
+<body>
+
+
+<div id ="main" class="canvas">
+
+    <div class="header">
+        <div class="container">
+
+            <div class= "logo">
+                <span class = "step1"  onclick="openNav()" style="font-size: 30px; top: 13px; margin-left: 10px; ">&#9776;</span>
+                <h1>Crypto-Currency Viz App</h1>
+            </div>
+        </div>
+
+        <div class="nav">
+
+            <div class="w3-bar w3-border w3-light-grey">
+                <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-green" >Price History View</a>
+                <a href="ohlc.html" class="w3-bar-item w3-button w3-mobile">OHLC View</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <div id="container" style="min-width: 310px; height: 510px; margin-right: auto; margin-left: auto;"></div>
+
+    <div class = "footer">
+        <div class="container">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="btc-icon">
+        <a href="#" id="btc"><img src="img/BTC.svg" alt="Bitcoin" height = "30px" width="30px" style='vertical-align: middle'> Bitcoin</a>
+    </div>
+
+    <div class="eth-icon">
+        <a href="#" id="eth"><img src="img/ETH.svg" alt="Etheruem" height = "30px" width="30px" style='vertical-align: middle'> Ethereum</a>
+    </div>
+
+    <div class="xrp-icon">
+        <a href="#" id="xrp"><img src="img/XRP.svg" alt="Ripple" height = "30px" width="30px" style='vertical-align: middle'> Ripple</a>
+    </div>
+
+    <div class="dash-icon">
+        <a href="#" id="dash"><img src="img/DASH.svg" alt="Dash" height = "30px" width="30px" style='vertical-align: middle'> Dash</a>
+    </div>
+    <div class="etc-icon">
+        <a href="#" id="etc"><img src="img/ETC-alt.svg" alt="Ethereum Classic" height = "30px" width="30px" style='vertical-align: middle'> Eth-Classic</a>
+    </div>
+
+    <div class="ltc-icon">
+        <a href="#" id="ltc"><img src="img/LTC.svg" alt="Litecoin" height = "30px" width="30px" style='vertical-align: middle'> Litecoin</a>
+    </div>
+
+    <div class="xmr-icon" >
+        <a href="#" id="xmr"><img src="img/XMR.svg" alt="Monero" height = "30px" width="30px" style='vertical-align: middle'> Monero</a>
+    </div>
+    <div class="xem-icon" >
+        <a href="#" id="xem"><img src="img/XEM.svg" alt="NEM" height = "30px" width="30px" > NEM</a>
+    </div>
+
+    <div class="neos-icon">
+        <a href="#" id="neos"><img src="img/NEOS-alt.svg" alt="NEOS" height = "30px" width="30px"> NEOS</a>
+    </div>
+
+    <div class="strat-icon">
+        <a href="#" id="strat"><img src="img/STRAT-alt.svg" alt="Stratis" height = "30px" width="30px"> Startis</a>
+    </div>
+</div>
+
+
+
+
+
+<div class = "footer">
+    <div class="container">
+
+    </div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script src="ohlchistory.js" type="text/javascript"></script>
+
+</body>
+</html>

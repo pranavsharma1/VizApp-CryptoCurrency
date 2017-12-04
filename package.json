@@ -1,0 +1,24 @@
+{
+  "name": "vizapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavsharma1/viz-app.git"
+  },
+  "author": "PS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranavsharma1/viz-app/issues"
+  },
+  "homepage": "https://github.com/pranavsharma1/viz-app#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-jsonp": "^1.0.2",
+    "nodemon": "^1.12.1"
+  }
+}
